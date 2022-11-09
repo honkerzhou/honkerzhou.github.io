@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS错误处理与调试 | honkerzhou</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="description" content="honkerzhou-梦想成为优秀的社会主义接班人">
+    
+    <link rel="preload" href="/assets/css/0.styles.6d920bc0.css" as="style"><link rel="preload" href="/assets/js/app.6ddf0b71.js" as="script"><link rel="preload" href="/assets/js/2.4f1b6d11.js" as="script"><link rel="preload" href="/assets/js/25.18fee9f2.js" as="script"><link rel="prefetch" href="/assets/js/10.0ad7123c.js"><link rel="prefetch" href="/assets/js/11.b93ea048.js"><link rel="prefetch" href="/assets/js/12.8e195270.js"><link rel="prefetch" href="/assets/js/13.0d0ec676.js"><link rel="prefetch" href="/assets/js/14.05e957cd.js"><link rel="prefetch" href="/assets/js/15.380cac30.js"><link rel="prefetch" href="/assets/js/16.83b0410b.js"><link rel="prefetch" href="/assets/js/17.a7ad8f01.js"><link rel="prefetch" href="/assets/js/18.5916243c.js"><link rel="prefetch" href="/assets/js/19.6a5a3a4f.js"><link rel="prefetch" href="/assets/js/20.4e3a2c2d.js"><link rel="prefetch" href="/assets/js/21.8d27132f.js"><link rel="prefetch" href="/assets/js/22.9c8a6a11.js"><link rel="prefetch" href="/assets/js/23.8beb0211.js"><link rel="prefetch" href="/assets/js/24.7ab666ac.js"><link rel="prefetch" href="/assets/js/26.20dee706.js"><link rel="prefetch" href="/assets/js/27.ee15d5bf.js"><link rel="prefetch" href="/assets/js/28.bc8df6f0.js"><link rel="prefetch" href="/assets/js/29.ff1a72ec.js"><link rel="prefetch" href="/assets/js/3.3cdc0523.js"><link rel="prefetch" href="/assets/js/30.ea9eec55.js"><link rel="prefetch" href="/assets/js/31.e7923f98.js"><link rel="prefetch" href="/assets/js/32.b95c37f1.js"><link rel="prefetch" href="/assets/js/33.016ae840.js"><link rel="prefetch" href="/assets/js/34.30686f5b.js"><link rel="prefetch" href="/assets/js/35.6c89543d.js"><link rel="prefetch" href="/assets/js/36.956af833.js"><link rel="prefetch" href="/assets/js/37.4d678732.js"><link rel="prefetch" href="/assets/js/38.3f50233a.js"><link rel="prefetch" href="/assets/js/39.2511b148.js"><link rel="prefetch" href="/assets/js/4.be256ac2.js"><link rel="prefetch" href="/assets/js/5.18e64c06.js"><link rel="prefetch" href="/assets/js/6.a9b62d79.js"><link rel="prefetch" href="/assets/js/7.b14ef36b.js"><link rel="prefetch" href="/assets/js/8.a4b42cae.js"><link rel="prefetch" href="/assets/js/9.37ec6401.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6d920bc0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">honkerzhou</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tutorial/" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  JS
+</a></div><div class="nav-item"><a href="/app/" class="nav-link">
+  APP
+</a></div><div class="nav-item"><a href="/data-visualization/" class="nav-link">
+  数据可视化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essential/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/essential/vscode.html" class="nav-link">
+  Vscode
+</a></li><li class="dropdown-item"><!----> <a href="/essential/interview.html" class="nav-link">
+  面试
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tutorial/" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  JS
+</a></div><div class="nav-item"><a href="/app/" class="nav-link">
+  APP
+</a></div><div class="nav-item"><a href="/data-visualization/" class="nav-link">
+  数据可视化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essential/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/essential/vscode.html" class="nav-link">
+  Vscode
+</a></li><li class="dropdown-item"><!----> <a href="/essential/interview.html" class="nav-link">
+  面试
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/javascript/object.html" class="sidebar-link">对象（object)</a></li><li><a href="/javascript/prototype.html" class="sidebar-link">原型(prototype)</a></li><li><a href="/javascript/this.html" class="sidebar-link">/javascript/this.html</a></li><li><a href="/javascript/event-loop.html" class="sidebar-link">事件循环</a></li><li><a href="/javascript/asynchronous.html" class="sidebar-link">异步</a></li><li><a href="/javascript/error-handle.html" aria-current="page" class="active sidebar-link">JS错误处理与调试</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-1-浏览器报告的错误" class="sidebar-link">17.1 浏览器报告的错误</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-错误处理" class="sidebar-link">17.2 错误处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-1-try-catch语句" class="sidebar-link">17.2.1 try-catch语句</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-2-抛出错误" class="sidebar-link">17.2.2 抛出错误</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-3-错误-error-事件" class="sidebar-link">17.2.3 错误（error）事件</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-4-处理错误的策略" class="sidebar-link">17.2.4 处理错误的策略</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-5-常见的错误类型" class="sidebar-link">17.2.5 常见的错误类型</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-6-区分致命错误和非致命错误" class="sidebar-link">17.2.6 区分致命错误和非致命错误</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-2-7-把错误记录到服务器" class="sidebar-link">17.2.7 把错误记录到服务器</a></li></ul></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-3-调试技术" class="sidebar-link">17.3 调试技术</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-3-1-将消息记录到控制台" class="sidebar-link">17.3.1 将消息记录到控制台</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-3-2-将消息记录到当前页面" class="sidebar-link">17.3.2 将消息记录到当前页面</a></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-3-3-抛出错误" class="sidebar-link">17.3.3 抛出错误</a></li></ul></li><li class="sidebar-sub-header"><a href="/javascript/error-handle.html#_17-4-常见的ie-错误" class="sidebar-link">17.4 常见的IE 错误</a></li></ul></li><li><a href="/javascript/date-format.html" class="sidebar-link">YYYY-MM-DD与YYYY/MM/DD之错误时间戳</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="js错误处理与调试"><a href="#js错误处理与调试" class="header-anchor">#</a> JS错误处理与调试</h1> <h2 id="_17-1-浏览器报告的错误"><a href="#_17-1-浏览器报告的错误" class="header-anchor">#</a> 17.1 浏览器报告的错误</h2> <p>本节讲如何一步一步打开各个主流浏览器的“开发者调试工具”，推荐直接在浏览器窗口按快捷键<code>F12</code>。</p> <h2 id="_17-2-错误处理"><a href="#_17-2-错误处理" class="header-anchor">#</a> 17.2 错误处理</h2> <h3 id="_17-2-1-try-catch语句"><a href="#_17-2-1-try-catch语句" class="header-anchor">#</a> 17.2.1 try-catch语句</h3> <p>1.try-catch语句标准模板：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">try</span><span class="token punctuation">{</span>
+	<span class="token comment">// 可能会导致错误的代码</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">// 在错误发生时怎么处理</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>2.finally 子句
+虽然在 try-catch 语句中是可选的，但finally 子句一经使用，其代码无论如何都会执行。参考代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">testFinally</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">2</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>	   <span class="token comment">//尽管前面肯定有个return执行，但还是会执行此步，最终只会返回0</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>3.错误类型
+ECMA-262 定义了下列7 种错误类型：<br>
+ Error<br>
+ EvalError<br>
+ RangeError<br>
+ ReferenceError<br>
+ SyntaxError<br>
+ TypeError<br>
+ URIError</p> <ul><li><p>Error 是基类型，其他错误类型都继承自该类型。因此，所有错误类型共享了一组相同的属性（错误对象中的方法全是默认的对象方法）。Error 类型的错误很少见，如果有也是浏览器抛出的；这个基类型的主要目的是供开发人员抛出自定义错误。</p></li> <li><p>EvalError 类型的错误会在使用eval()函数而发生异常时被抛出。简单地说，如果没有把eval()当成函数调用，就会抛出错误。在实际开发中极少会这样使用eval()，所以遇到这种错误类型的可能性极小。</p></li> <li><p>RangeError 类型的错误会在数值超出相应范围时触发。</p></li> <li><p>在找不到对象的情况下，会发生ReferenceError（这种情况下，会直接导致人所共知的&quot;object expected&quot;浏览器错误）。通常，在访问不存在的变量时，就会发生这种错误。</p></li> <li><p>剩下的三个相应的就是语法错误、类型错误和URL错误。</p></li></ul> <h3 id="_17-2-2-抛出错误"><a href="#_17-2-2-抛出错误" class="header-anchor">#</a> 17.2.2 抛出错误</h3> <p>与 try-catch 语句相配的还有一个throw 操作符，用于随时抛出自定义错误。抛出错误时，必须
+要给throw 操作符指定一个值，这个值是什么类型，没有要求。下列代码都是有效的：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">throw</span> <span class="token number">12345</span><span class="token punctuation">;</span>
+<span class="token keyword">throw</span> <span class="token string">&quot;Hello world!&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">throw</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">throw</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;JavaScript&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;Something bad happened.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//使用内置错误类型，可以更真实地模拟浏览器错误</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>在遇到 throw 操作符时，代码会立即停止执行。仅当有try-catch 语句捕获到被抛出的值时，代
+码才会继续执行。</p> <h3 id="_17-2-3-错误-error-事件"><a href="#_17-2-3-错误-error-事件" class="header-anchor">#</a> 17.2.3 错误（error）事件</h3> <p>任何没有通过try-catch 处理的错误都会触发window 对象的error 事件。在任何Web 浏览器中，onerror 事件处理程序都不会创建event 对象，但它可以接收三个参数：错误消息、错误所在的URL 和行号。</p> <h3 id="_17-2-4-处理错误的策略"><a href="#_17-2-4-处理错误的策略" class="header-anchor">#</a> 17.2.4 处理错误的策略</h3> <p>无重要内容。</p> <h3 id="_17-2-5-常见的错误类型"><a href="#_17-2-5-常见的错误类型" class="header-anchor">#</a> 17.2.5 常见的错误类型</h3> <p>由于JavaScript 是松散类型的，而且也不会验证函数的参数，因此错误只会在代码运行期间出现。一般来说，需要关注三种错误：<br>
+ 类型转换错误<br>
+ 数据类型错误<br>
+ 通信错误<br>
+以上错误分别会在特定的模式下或者没有对值进行足够的检查的情况下发生。</p> <ul><li><p>类型转换错误发生在使用某个操作符，或者使用其他可能会自动转换值的数据类型的语言结构时。</p></li> <li><p>数据类型错误最容易发生在将预料之外的值传递给函数的情况下。</p></li> <li><p>通信错误与格式不正确的URL 或发送的数据有关,另外，在服务器响应的数据不正确时，也会发生通信错误。</p></li></ul> <h3 id="_17-2-6-区分致命错误和非致命错误"><a href="#_17-2-6-区分致命错误和非致命错误" class="header-anchor">#</a> 17.2.6 区分致命错误和非致命错误</h3> <p>区分非致命错误和致命错误的主要依据，就是看它们对用户的影响。</p> <h3 id="_17-2-7-把错误记录到服务器"><a href="#_17-2-7-把错误记录到服务器" class="header-anchor">#</a> 17.2.7 把错误记录到服务器</h3> <p>暂无使用过。</p> <h2 id="_17-3-调试技术"><a href="#_17-3-调试技术" class="header-anchor">#</a> 17.3 调试技术</h2> <p>不再建议在调试中使用alert()了，一方面比较麻烦（调试之后还需要清理），另一方面还可能引入新问题（想象一下把某个alert()函数遗留在产品代码中的结果，会打断用户操作）。</p> <h3 id="_17-3-1-将消息记录到控制台"><a href="#_17-3-1-将消息记录到控制台" class="header-anchor">#</a> 17.3.1 将消息记录到控制台</h3> <ol><li>console.error(message)：将错误消息记录到控制台</li> <li>console.info(message)：将信息性消息记录到控制台</li> <li>console.log(message)：将一般消息记录到控制台</li> <li>console.warn(message)：将警告消息记录到控制台</li></ol> <h3 id="_17-3-2-将消息记录到当前页面"><a href="#_17-3-2-将消息记录到当前页面" class="header-anchor">#</a> 17.3.2 将消息记录到当前页面</h3> <p>这种技术在不支持JavaScript 控制台的IE7 及更早版本或其他浏览器中十分有用。目前基本不适用。</p> <h3 id="_17-3-3-抛出错误"><a href="#_17-3-3-抛出错误" class="header-anchor">#</a> 17.3.3 抛出错误</h3> <p>对于大型应用程序来说，自定义的错误通常都使用assert()函数抛出。这个函数接受两个参数，一个是求值结果应该为true 的条件，另一个是条件为false 时要抛出的错误。标准模板：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">assert</span><span class="token punctuation">(</span><span class="token parameter">condition<span class="token punctuation">,</span> message</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>condition<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>可以用这个assert()函数代替某些函数中需要调试的if 语句，以便输出错误消息。请看以下两个例子：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">divide</span><span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> num1 <span class="token operator">!=</span> <span class="token string">&quot;number&quot;</span> <span class="token operator">||</span> <span class="token keyword">typeof</span> num2 <span class="token operator">!=</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;divide(): Both arguments must be numbers.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> num1 <span class="token operator">/</span> num2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/* 这个简单的函数计算两个数的除法，在计算之前，必须先检测每个参数是否都是数值，不然如果有一个参数不是数
+值，它会返回NaN。如果返回NaN，就会在Web 应用程序中导致问题 */</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">divide</span><span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">assert</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> num1 <span class="token operator">==</span> <span class="token string">&quot;number&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> num2 <span class="token operator">==</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;divide(): Both arguments must be numbers.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> num1 <span class="token operator">/</span> num2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 可见，使用assert()函数可以减少抛出错误所需的代码量，而且也比前面的代码更容易看懂。（个人并不觉得。。。）</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_17-4-常见的ie-错误"><a href="#_17-4-常见的ie-错误" class="header-anchor">#</a> 17.4 常见的IE 错误</h2> <p>留待以后遇见补充。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/9/2022, 6:38:52 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/asynchronous.html" class="prev">
+        异步
+      </a></span> <span class="next"><a href="/javascript/date-format.html">
+        YYYY-MM-DD与YYYY/MM/DD之错误时间戳
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6ddf0b71.js" defer></script><script src="/assets/js/2.4f1b6d11.js" defer></script><script src="/assets/js/25.18fee9f2.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>django-allauth入门学习和使用 | honkerzhou</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="description" content="honkerzhou-梦想成为优秀的社会主义接班人">
+    
+    <link rel="preload" href="/assets/css/0.styles.6d920bc0.css" as="style"><link rel="preload" href="/assets/js/app.6ddf0b71.js" as="script"><link rel="preload" href="/assets/js/2.4f1b6d11.js" as="script"><link rel="preload" href="/assets/js/31.e7923f98.js" as="script"><link rel="prefetch" href="/assets/js/10.0ad7123c.js"><link rel="prefetch" href="/assets/js/11.b93ea048.js"><link rel="prefetch" href="/assets/js/12.8e195270.js"><link rel="prefetch" href="/assets/js/13.0d0ec676.js"><link rel="prefetch" href="/assets/js/14.05e957cd.js"><link rel="prefetch" href="/assets/js/15.380cac30.js"><link rel="prefetch" href="/assets/js/16.83b0410b.js"><link rel="prefetch" href="/assets/js/17.a7ad8f01.js"><link rel="prefetch" href="/assets/js/18.5916243c.js"><link rel="prefetch" href="/assets/js/19.6a5a3a4f.js"><link rel="prefetch" href="/assets/js/20.4e3a2c2d.js"><link rel="prefetch" href="/assets/js/21.8d27132f.js"><link rel="prefetch" href="/assets/js/22.9c8a6a11.js"><link rel="prefetch" href="/assets/js/23.8beb0211.js"><link rel="prefetch" href="/assets/js/24.7ab666ac.js"><link rel="prefetch" href="/assets/js/25.18fee9f2.js"><link rel="prefetch" href="/assets/js/26.20dee706.js"><link rel="prefetch" href="/assets/js/27.ee15d5bf.js"><link rel="prefetch" href="/assets/js/28.bc8df6f0.js"><link rel="prefetch" href="/assets/js/29.ff1a72ec.js"><link rel="prefetch" href="/assets/js/3.3cdc0523.js"><link rel="prefetch" href="/assets/js/30.ea9eec55.js"><link rel="prefetch" href="/assets/js/32.b95c37f1.js"><link rel="prefetch" href="/assets/js/33.016ae840.js"><link rel="prefetch" href="/assets/js/34.30686f5b.js"><link rel="prefetch" href="/assets/js/35.6c89543d.js"><link rel="prefetch" href="/assets/js/36.956af833.js"><link rel="prefetch" href="/assets/js/37.4d678732.js"><link rel="prefetch" href="/assets/js/38.3f50233a.js"><link rel="prefetch" href="/assets/js/39.2511b148.js"><link rel="prefetch" href="/assets/js/4.be256ac2.js"><link rel="prefetch" href="/assets/js/5.18e64c06.js"><link rel="prefetch" href="/assets/js/6.a9b62d79.js"><link rel="prefetch" href="/assets/js/7.b14ef36b.js"><link rel="prefetch" href="/assets/js/8.a4b42cae.js"><link rel="prefetch" href="/assets/js/9.37ec6401.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6d920bc0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">honkerzhou</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tutorial/" class="nav-link router-link-active">
+  教程
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/app/" class="nav-link">
+  APP
+</a></div><div class="nav-item"><a href="/data-visualization/" class="nav-link">
+  数据可视化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essential/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/essential/vscode.html" class="nav-link">
+  Vscode
+</a></li><li class="dropdown-item"><!----> <a href="/essential/interview.html" class="nav-link">
+  面试
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tutorial/" class="nav-link router-link-active">
+  教程
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/app/" class="nav-link">
+  APP
+</a></div><div class="nav-item"><a href="/data-visualization/" class="nav-link">
+  数据可视化
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其它" class="dropdown-title"><span class="title">其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="其它" class="mobile-dropdown-title"><span class="title">其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essential/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/essential/vscode.html" class="nav-link">
+  Vscode
+</a></li><li class="dropdown-item"><!----> <a href="/essential/interview.html" class="nav-link">
+  面试
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/tutorial/" aria-current="page" class="sidebar-link">介绍</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>手把手带你入门全栈</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/tutorial/vuepress-blog.html" class="sidebar-link">Vuepress博客教程</a></li><li><a href="/tutorial/django-allauth.html" aria-current="page" class="active sidebar-link">django-allauth入门学习和使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorial/django-allauth.html#安装与基本配置" class="sidebar-link">安装与基本配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorial/django-allauth.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/tutorial/django-allauth.html#基本配置" class="sidebar-link">基本配置</a></li></ul></li><li class="sidebar-sub-header"><a href="/tutorial/django-allauth.html#添加社交账号登录" class="sidebar-link">添加社交账号登录</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorial/django-allauth.html#后台设置" class="sidebar-link">后台设置</a></li><li class="sidebar-sub-header"><a href="/tutorial/django-allauth.html#获取第三方应用的client-id和secret-key" class="sidebar-link">获取第三方应用的Client id和Secret key</a></li><li class="sidebar-sub-header"><a href="/tutorial/django-allauth.html#验证和初步使用" class="sidebar-link">验证和初步使用</a></li></ul></li></ul></li><li><a href="/tutorial/ssh.html" class="sidebar-link">SSH登录</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="django-allauth入门学习和使用"><a href="#django-allauth入门学习和使用" class="header-anchor">#</a> django-allauth入门学习和使用</h1> <p>django-allauth是集成的Django应用程序，用于解决网站身份验证，用户的注册登录及账户管理，以及第三方（社交）账户的身份验证。</p> <p>既然你知道并准备使用django-allauth，所以本文假定你已经掌握了基本的django知识（比如会用django搭建Web App，甚至是一个小型博客网站）。</p> <h2 id="安装与基本配置"><a href="#安装与基本配置" class="header-anchor">#</a> 安装与基本配置</h2> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>	 pip <span class="token function">install</span> django-allauth
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="基本配置"><a href="#基本配置" class="header-anchor">#</a> 基本配置</h3> <p>1.在你项目的settings.py里<strong>加上</strong>以下相对应的代码</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>TEMPLATES <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">'BACKEND'</span><span class="token punctuation">:</span> <span class="token string">'django.template.backends.django.DjangoTemplates'</span><span class="token punctuation">,</span>
+        <span class="token string">'DIRS'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">'APP_DIRS'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+        <span class="token string">'OPTIONS'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'context_processors'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'django.template.context_processors.request'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+
+AUTHENTICATION_BACKENDS <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token string">'django.contrib.auth.backends.ModelBackend'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.account.auth_backends.AuthenticationBackend'</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+
+INSTALLED_APPS <span class="token operator">=</span> <span class="token punctuation">(</span>
+   
+    <span class="token comment"># 这两个django本身的app也是需要的，但不需要重复添加</span>
+    <span class="token string">'django.contrib.auth'</span><span class="token punctuation">,</span>
+    <span class="token string">'django.contrib.sites'</span><span class="token punctuation">,</span>
+
+    <span class="token string">'allauth'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.account'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount'</span><span class="token punctuation">,</span>
+
+    <span class="token comment"># 下面是django-allauth目前支持的社交账号，加上你需要的就行了，不用全加上:</span>
+    <span class="token string">'allauth.socialaccount.providers.amazon'</span><span class="token punctuation">,</span> <span class="token comment"># 亚马逊</span>
+    <span class="token string">'allauth.socialaccount.providers.angellist'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.asana'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.auth0'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.authentiq'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.baidu'</span><span class="token punctuation">,</span> <span class="token comment"># 百度</span>
+    <span class="token string">'allauth.socialaccount.providers.basecamp'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.bitbucket'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.bitbucket_oauth2'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.bitly'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.coinbase'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.dataporten'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.daum'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.digitalocean'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.discord'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.douban'</span><span class="token punctuation">,</span> <span class="token comment"># 豆瓣</span>
+    <span class="token string">'allauth.socialaccount.providers.draugiem'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.dropbox'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.dwolla'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.edmodo'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.eveonline'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.evernote'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.facebook'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.feedly'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.fivehundredpx'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.flickr'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.foursquare'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.fxa'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.github'</span><span class="token punctuation">,</span> <span class="token comment"># GitHub</span>
+    <span class="token string">'allauth.socialaccount.providers.gitlab'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.google'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.hubic'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.instagram'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.kakao'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.line'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.linkedin'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.linkedin_oauth2'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.mailru'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.mailchimp'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.meetup'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.naver'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.odnoklassniki'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.openid'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.orcid'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.paypal'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.persona'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.pinterest'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.reddit'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.robinhood'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.shopify'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.slack'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.soundcloud'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.spotify'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.stackexchange'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.stripe'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.trello'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.tumblr'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.twentythreeandme'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.twitch'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.twitter'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.untappd'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.vimeo'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.vk'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.weibo'</span><span class="token punctuation">,</span> <span class="token comment"># 新浪微博</span>
+    <span class="token string">'allauth.socialaccount.providers.weixin'</span><span class="token punctuation">,</span> <span class="token comment"># 微信</span>
+    <span class="token string">'allauth.socialaccount.providers.windowslive'</span><span class="token punctuation">,</span>
+    <span class="token string">'allauth.socialaccount.providers.xing'</span><span class="token punctuation">,</span>
+    
+<span class="token punctuation">)</span>
+
+SITE_ID <span class="token operator">=</span> <span class="token number">1</span>    <span class="token comment"># 不要漏了这句哦</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br></div></div><p>2.在项目的urls.py(即与setting.py在同一文件夹的urls.py)里<strong>加上</strong>下面这句：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    url<span class="token punctuation">(</span><span class="token string">r'^accounts/'</span><span class="token punctuation">,</span> include<span class="token punctuation">(</span><span class="token string">'allauth.urls'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>温馨提示</strong>：<br>
+如果你了解或者用过<code>django.contrib.auth.urls</code>这个模块的话，那么用了django-allauth后你就可以用由<code>allauth</code>提供的<code>account_login</code>,      <code>account_logout</code> ,<code>account_set_password</code> ......这些URLs来替代原先的<code>login</code>, <code>logout</code>, <code>password_change</code>......</p> <p>3.在项目的根目录（即manage.py所在文件夹）里执行以下命令:</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>python manage.py migrate
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>4.重启服务器。</p> <h2 id="添加社交账号登录"><a href="#添加社交账号登录" class="header-anchor">#</a> 添加社交账号登录</h2> <h3 id="后台设置"><a href="#后台设置" class="header-anchor">#</a> 后台设置</h3> <p>**注意：**因为做网站一般有两种环境：开发环境（即网站在本地主机上开发）和生产环境（即网站部署在服务器），而开发环境网站主页一般为：<code>http://127.0.0.1:8000</code>,生产环境则类似为<code>http://www.honkerzhou.com</code>，为简单描述，所以下文我会直接用<code>你的域名</code>代替你的网站主页地址，故请分清自己的网站主页地址，以免混淆。</p> <ol><li>进入后台管理界面（<code>你的域名/admin/</code> ）,点击站点(Sites),在里面增加一个站点，域名就写<code>你的域名</code>,名称随意，填好后点保存；</li> <li>在社交账号（SOCIAL ACCOUNTS)下的社交app（Social application）里增加一个社交app，需要你填上相关信息（下面以支持GitHub社交账号登录为例）。</li> <li>Provider：选择GitHub；</li> <li>名称（Name）：可以随便写，只有你自己能辨别就好，建议写GitHub；</li> <li>Client id和Secret key： 需要到<a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>上申请获取。如没有或不会，详见[获取第三方应用的Client id和Secret key](#获取第三方应用的Client id和Secret key)；</li> <li>Key: 可不填；</li> <li>Sites: 在可用的sites下选中你的域名，将其移到右边选中的sites中，点保存。</li></ol> <h3 id="获取第三方应用的client-id和secret-key"><a href="#获取第三方应用的client-id和secret-key" class="header-anchor">#</a> 获取第三方应用的Client id和Secret key</h3> <h4 id="_1-github"><a href="#_1-github" class="header-anchor">#</a> 1.GitHub</h4> <p>登录GitHub后 --&gt; 进入Settings --&gt; 进入Developer settings --&gt; 在OAuth Apps下进入New OAuth App --&gt; 然后按步骤填写信息 --&gt;  进入下一步后就可以看到Client id和Secret key了。</p> <p><strong>注意：</strong></p> <ol><li>Homepage URL填写<code>你的域名</code>;</li> <li>Authorization callback URL填写<code>你的域名/accounts/github/login/callback/</code>。</li></ol> <h3 id="验证和初步使用"><a href="#验证和初步使用" class="header-anchor">#</a> 验证和初步使用</h3> <ol><li><strong>重要：注销你的管理员账号！！！</strong></li> <li>进入这个网址：<code>你的域名/accounts/login/</code> ,你会看到一个排版很乱很丑的页面，这是django-allauth自带的模板。如果这时你选择通过GitHub账号登录并且出现了GitHub登录授权的提示说明你前面都做对了，恭喜你！</li> <li>但你会发现授权登录后链接到了这个网址：<code>你的域名/accounts/profile/</code> ,并且得到一个404页面，这时请别慌张，你只需要在你的settings.py文件里加上这句代码：<code>LOGIN_REDIRECT_URL = '/'</code>保存后刷新页面，你会发现跳转到了你网站的主页面；</li> <li>如果你要退出登录，进入这个网址： 你的域名/accounts/logout/  注销即可。</li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/9/2022, 6:38:52 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tutorial/vuepress-blog.html" class="prev">
+        Vuepress博客教程
+      </a></span> <span class="next"><a href="/tutorial/ssh.html">
+        SSH登录
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6ddf0b71.js" defer></script><script src="/assets/js/2.4f1b6d11.js" defer></script><script src="/assets/js/31.e7923f98.js" defer></script>
+  </body>
+</html>
